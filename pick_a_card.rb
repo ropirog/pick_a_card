@@ -7,8 +7,8 @@ suits = ['Diamonds', 'Hearts', 'Clubs', 'Spades'] # Буби, Черви, Кре
 cards = []
 
 values.each do |value|
-  suits do |suit|
-    cards << "#{value} of #{suits}"
+  suits.each do |suit|
+    cards << "#{value}#{suit[0].downcase}"
   end
 end
 
